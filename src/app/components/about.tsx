@@ -16,7 +16,7 @@ const AboutMe = () => {
     return (
         <div id="about" className="relative w-full min-h-screen">
 
-            <div className="absolute inset-0 bg-[url(/images/top-section.jpg)] bg-no-repeat bg-cover bg-fixed z-0">
+            <div className="absolute inset-0 bg-[url(/alireza/images/top-section.jpg)] bg-no-repeat bg-cover bg-fixed z-0">
                 <div className="absolute inset-0 bg-black/80" />
             </div>
 

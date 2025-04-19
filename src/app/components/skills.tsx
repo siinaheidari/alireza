@@ -16,7 +16,7 @@ const Skills = () => {
     return (
         <div id="skills" className="relative w-full min-h-screen">
 
-            <div className="absolute inset-0 bg-[url(/images/skills.jpg)] bg-no-repeat bg-cover bg-fixed z-0">
+            <div className="absolute inset-0 bg-[url(/alireza/images/skills.jpg)] bg-no-repeat bg-cover bg-fixed z-0">
                 <div className="absolute inset-0 bg-black/80"/>
             </div>
 
