@@ -61,7 +61,7 @@ const Skills = () => {
                                 {section.data.map(item => (
                                     <div
                                         key={item}
-                                        className="flex text-h6 max-md:text-bodyLg text-gray-600 item-center font-[600]"
+                                        className="flex text-h6 max-md:text-bodyMd text-gray-600 item-center font-[600]"
                                     >
                                         <div className="bg-black size-2 rounded-full mt-2 me-2" />
                                         <div>{item}</div>

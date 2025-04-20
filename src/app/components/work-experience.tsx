@@ -168,7 +168,7 @@ const WorkExperience = () => {
                             {selectedItem?.info?.map((item, index) => (
                                 <div key={index} className="flex gap-4">
                                     <div
-                                        className={`text-bodyMd pb-1 w-full ${
+                                        className={`text-bodyMd max-md:text-bodySm pb-1 w-full ${
                                             index !== (selectedItem.info?.length ?? 0) - 1 ? 'border-b border-gray-300' : ''
                                         }`}
                                     >

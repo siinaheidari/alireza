@@ -21,7 +21,7 @@ const Education = () => {
                 University of Tehran
 
             </div>
-            <div className={"text-captionLg text-gray-2"}>
+            <div className={"text-bodyMd text-gray-2 max-md:text-bodySm"}>
                 2019 - 2022
                 Grade: A
             </div>
@@ -29,7 +29,7 @@ const Education = () => {
             <div className={"text-captionLg max-md:text-captionLg "}>
                 Supervisor: Dr. Behnam Bahrak
             </div>
-            <div className={"text-bodyLg max-md:text-buttonSm  text-gray-3"}>
+            <div className={"text-bodyLg max-md:text-buttonSm  text-gray-4"}>
                 Publication: A graph-based deep learning approach for illegal transaction detection in Bitcoin.
             </div>
         </div>
@@ -45,7 +45,7 @@ const Education = () => {
                 Iran University of Science and Technology
 
             </div>
-            <div className={"text-captionLg text-gray-2"}>
+            <div className={"text-bodyMd text-gray-2 max-md:text-bodySm"}>
                 2014 - 2018
                 Grade: A
             </div>
@@ -53,7 +53,7 @@ const Education = () => {
             <div className={"text-captionLg max-md:text-captionLg "}>
                 Supervisor: Prof. Mohsen Sharifi
             </div>
-            <div className={"text-bodyLg max-md:text-buttonSm  text-gray-3"}>
+            <div className={"text-bodyLg max-md:text-buttonSm  text-gray-4"}>
                 Design and Implementation of an Execution
                 Unit Migration Mechanism In order to
                 Dynamic Scheduling
