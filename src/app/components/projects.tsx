@@ -24,7 +24,7 @@ const Projects = () => {
         <div id={"professionalActivities"} className={"px-6 min-h-screen center py-30  max-md:py-12"}>
             <div className={""}>
                 <div>
-                    <div className={"text-h3 max-md:text-h4 font-[600] text-center mb-28  max-md:mb-12"}>
+                    <div className={"text-h3 max-md:text-h4 font-[600] text-center mb-40  max-md:mb-12"}>
                         Personal Projects
                     </div>
                     <div className={"grid grid-cols-2 max-md:grid-cols-1 gap-8 w-full max-w-[1800px] mx-auto"}>

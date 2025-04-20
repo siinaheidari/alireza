@@ -8,13 +8,32 @@ import skills from "../../../public/images/skills.jpg";
 
 const Skills = () => {
 
-    const skillsItems =
+    const skillsItems = [
         {
-            aiData: ["Keras", "TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "NumPy"],
-            backend: ["Flask", 'Django', "ASP.NET", "Node.js", "Express", "GIN"],
-            devOps: ["Docker", 'Nginx', "Apache Web Server", "Gitlab CI/CD", "Linux", "Azure"],
-            database: ["MongoDB", 'PostgreSQL', "Microsoft SQL Server", "MySQL", "Redis", "Firebase"],
+            title: "AI & Data",
+            icon: ai,
+            data: ["Keras", "TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "NumPy"],
+            animation: "fade-right"
+        },
+        {
+            title: "Backend",
+            icon: backend,
+            data: ["Flask", "Django", "ASP.NET", "Node.js", "Express", "GIN"],
+            animation: "fade-left"
+        },
+        {
+            title: "DevOps",
+            icon: devops,
+            data: ["Docker", "Nginx", "Apache Web Server", "Gitlab CI/CD", "Linux", "Azure"],
+            animation: "fade-right"
+        },
+        {
+            title: "Database",
+            icon: database,
+            data: ["MongoDB", "PostgreSQL", "Microsoft SQL Server", "MySQL", "Redis", "Firebase"],
+            animation: "fade-left"
         }
+    ];
 
 
     return (
@@ -25,95 +44,37 @@ const Skills = () => {
             </div>
 
             <div className="relative z-10 flex flex-col justify-center items-center w-full  pb-20 pt-10 px-4 text-center">
-                <div className={"text-h3 max-md:text-h4 font-[600] text-white text-center mb-32  "}>
+                <div className={"text-h3 max-md:text-h4 font-[600] text-white text-center mb-32 mt-12"}>
                     Skills
                 </div>
-                <div
-                    className={"grid grid-cols-2 max-lg:grid-cols-1 gap-x-20 gap-y-32  md:pe-12 md:ps-24 w-full max-w-[1800px]"}>
-                    <div data-aos={"fade-right"} className={"bg-white p-4 rounded-2xl relative pb-5"}>
-                        <div className={"md:mb-6 text-h4 max-md:text-h5 border-b pb-4 pt-2 text-blue"}>
-                            AI & Data
-                        </div>
-                        <div className={"grid grid-cols-2 max-lg:grid-cols-1 gap-2 text-start "}>
-                            {
-                                skillsItems?.aiData.map(item =>
+                <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-x-20 gap-y-32 md:pe-12 md:ps-24 w-full max-w-[1800px]">
+                    {skillsItems.map((section, idx) => (
+                        <div
+                            key={section.title}
+                            data-aos={section.animation}
+                            className="bg-white p-4 rounded-2xl relative pb-6"
+                        >
+                            <div className="md:mb-6 text-h4 max-md:text-h5 border-b pb-4 pt-2 text-blue">
+                                {section.title}
+                            </div>
+                            <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-2 text-start mt-2">
+                                {section.data.map(item => (
                                     <div
                                         key={item}
-                                        className={"flex text-h6 max-md:text-base text-gray-600 item-center font-[600]"}>
-                                        <div className={"bg-black size-2 rounded-full mt-2 me-2"}/>
+                                        className="flex text-h6 max-md:text-bodyLg text-gray-600 item-center font-[600]"
+                                    >
+                                        <div className="bg-black size-2 rounded-full mt-2 me-2" />
                                         <div>{item}</div>
-                                    </div>)
-                            }
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="absolute -left-8 max-md:left-1/2 max-md:-translate-x-1/2 top-[-55px] max-md:top-[-80px]">
+                                <Image placeholder="blur" src={section.icon} alt={section.title} className="size-[100px]" />
+                            </div>
                         </div>
-                        <div
-                            className={"absolute -left-8 max-md:left-1/2 max-md:-translate-x-1/2 top-[-55px] max-md:top-[-80px]"}>
-                            <Image placeholder={"blur"} src={ai} alt={'aiIcon'} className={"size-[100px] "}/>
-                        </div>
-                    </div>
-                    <div data-aos={"fade-left"} className={"bg-white p-4 rounded-2xl relative pb-5"}>
-                        <div className={"md:mb-6 text-h4 max-md:text-h5 border-b pb-4 pt-2 text-blue"}>
-                            Backend
-                        </div>
-                        <div className={"grid grid-cols-2 max-lg:grid-cols-1 gap-2 text-start "}>
-                            {
-                                skillsItems?.backend.map(item =>
-                                    <div
-                                        key={item}
-                                        className={"flex text-h6 max-md:text-base text-gray-600 item-center font-[600]"}>
-                                        <div className={"bg-black size-2 rounded-full mt-2 me-2"}/>
-                                        <div>{item}</div>
-                                    </div>)
-                            }
-                        </div>
-                        <div
-                            className={"absolute -left-8 max-md:left-1/2 max-md:-translate-x-1/2 top-[-55px] max-md:top-[-80px]"}>
-                            <Image placeholder={"blur"} src={backend} alt={'backend'} className={"size-[100px] "}/>
-                        </div>
-                    </div>
-                    <div data-aos={"fade-right"} className={"bg-white p-4 rounded-2xl relative pb-5"}>
-                        <div className={"md:mb-6 text-h4 max-md:text-h5 border-b pb-4 pt-2 text-blue"}>
-                            DevOps
-                        </div>
-                        <div className={"grid grid-cols-2 max-lg:grid-cols-1 gap-2 text-start "}>
-                            {
-                                skillsItems?.devOps.map(item =>
-                                    <div
-                                        key={item}
-                                        className={"flex text-h6 max-md:text-base text-gray-600 item-center font-[600]"}>
-                                        <div className={"bg-black size-2 rounded-full mt-2 me-2"}/>
-                                        <div>{item}</div>
-                                    </div>)
-                            }
-                        </div>
-                        <div
-                            className={"absolute -left-8 max-md:left-1/2 max-md:-translate-x-1/2 top-[-55px] max-md:top-[-100px]"}>
-                            <Image placeholder={"blur"} src={devops} alt={'devops'} className={"size-[120px]"}/>
-                        </div>
-                    </div>
-
-                    <div data-aos={"fade-left"} className={"bg-white p-4 rounded-2xl relative pb-5"}>
-                        <div className={"md:mb-6 text-h4 max-md:text-h5 border-b pb-4 pt-2 text-blue"}>
-                            Database
-                        </div>
-                        <div className={"grid grid-cols-2 max-lg:grid-cols-1 gap-2 text-start mt-2"}>
-                            {
-                                skillsItems?.database.map(item =>
-                                    <div
-                                        key={item}
-                                        className={"flex text-h6 max-md:text-base text-gray-600 item-center font-[600]"}>
-                                        <div className={"bg-black size-2 rounded-full mt-2 me-2"}/>
-                                        <div>{item}</div>
-                                    </div>)
-                            }
-                        </div>
-                        <div
-                            className={"absolute -left-8 max-md:left-1/2 max-md:-translate-x-1/2 top-[-55px] max-md:top-[-80px]"}>
-                            <Image placeholder={"blur"} src={database} alt={'database'} className={"size-[100px] "}/>
-                        </div>
-                    </div>
-
-
+                    ))}
                 </div>
+
 
             </div>
 

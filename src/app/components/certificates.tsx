@@ -44,9 +44,9 @@ const Certificate = () => {
     ]
 
     return (
-        <div id={"certificates"} className={"px-6 bg-black pt-30 center min-h-screen max-md:py-12"}>
+        <div id={"certificates"} className={"px-6 bg-black center min-h-screen max-md:py-12"}>
             <div className={""}>
-                <div className={"text-h3 max-md:text-h4 text-white font-[600] text-center mb-20  max-md:mb-12"}>
+                <div className={"text-h3 max-md:text-h4 text-white font-[600] text-center mb-32  max-md:mb-12"}>
                     Certificates
                 </div>
                 <div className={"grid grid-cols-2 gap-12 max-md:grid-cols-1 w-full max-w-[1800px] mx-auto"}>
