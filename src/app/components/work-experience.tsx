@@ -140,6 +140,7 @@ const WorkExperience = () => {
                 </ol>
             </div>
 
+
             <Modal  open={openModal} onClose={handleCloseModal} center
                     classNames={{
                 modal: 'w-1/2 max-w-none max-md:w-[90%]',
