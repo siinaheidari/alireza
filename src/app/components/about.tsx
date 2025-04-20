@@ -24,7 +24,8 @@ const AboutMe = () => {
                 <Image
                     src={alirezaImg}
                     alt="alirezaImg"
-                    placeholder="blur"
+
+
                     className="rounded-full size-[260px] max-md:mt-4 max-md:size-[160px] border-4 border-blue-400 mb-4"
                 />
 

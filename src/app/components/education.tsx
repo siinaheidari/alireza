@@ -16,7 +16,7 @@ const Education = () => {
             <div className={"text-h5  max-md:text-h6  text-blue"}>
                 Masters degree, Computer ScienceMasters degree, Computer Science
             </div>
-            <Image src={tehran} alt={'tehran'} className={"mx-auto size-[120px]"}/>
+            <Image placeholder={"blur"} src={tehran} alt={'tehran'} className={"mx-auto size-[120px]"}/>
             <div className={"text-h6 max-md:text-h6 "}>
                 University of Tehran
 
@@ -40,7 +40,7 @@ const Education = () => {
             <div className={"text-h5  max-md:text-h6  text-blue"}>
                 Bachelors degree, Computer ScienceBachelors degree, Computer Science
             </div>
-            <Image src={elmosanat} alt={'elmosanat'} className={"mx-auto size-[120px]  "}/>
+            <Image placeholder={"blur"} src={elmosanat} alt={'elmosanat'} className={"mx-auto size-[120px]  "}/>
             <div className={"text-h6 max-md:text-h6 "}>
                 Iran University of Science and Technology
 

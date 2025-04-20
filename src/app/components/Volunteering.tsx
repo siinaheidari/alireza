@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import elmosanat from "../../../public/images/elmosanat.jpg"
-import noImage from "../../../public/images/no-image.svg"
+import noImage from "../../../public/images/no-image.jpg"
 
 const Volunteering = () => {
 
@@ -43,7 +43,7 @@ const Volunteering = () => {
 
                             <div key={item?.title} data-aos={"fade-right"}
                                  className={" border border-gray-200 shadow-box max-lg:p-8 p-8 rounded-xl flex gap-4 max-md:flex-col max-md:justify-center"}>
-                                <Image src={item?.image} alt={'noImage'} className={"size-[100px] max-md:size-[80px]"}/>
+                                <Image placeholder={"blur"} src={item?.image} alt={'noImage'} className={"size-[100px] max-md:size-[80px]"}/>
                                 <div>
                                     <div className={"text-h5 text-white max-md:text-h6"}>
                                         {item?.title}

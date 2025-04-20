@@ -1,4 +1,4 @@
-import noImage from "../../../public/images/no-image.svg"
+import noImage from "../../../public/images/no-image.jpg"
 import saba from "../../../public/images/saba.jpg"
 import mahsan from "../../../public/images/mahsan.jpg"
 import tehran from "../../../public/images/tehran.jpg"
@@ -69,11 +69,11 @@ const WorkExperience = () => {
                 <ol className="relative border-s border-gray-300">
 
                     {
-                        workItems.map(item => <div data-aos={"fade-right"} key={item?.title}>
+                        workItems.map(item => <div data-aos={"fade-right"} key={item?.date}>
                             <li className="mb-10 ms-8 flex gap-4">
                                 <div>
                                     <div>
-                                        {item?.image && <Image src={item?.image} alt={`image=${item?.image}`} className={'size-[70px] max-lg:size-[60px]'}/>}
+                                        {item?.image && <Image placeholder={"blur"} src={item?.image} alt={`image=${item?.image}`} className={'size-[70px] max-lg:size-[60px]'}/>}
                                     </div>
                                 </div>
                                 <div>

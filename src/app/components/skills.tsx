@@ -46,7 +46,7 @@ const Skills = () => {
                         </div>
                         <div
                             className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
-                            <Image src={ai} alt={'aiIcon'} className={"size-[120px] max-md:size-[120px]"}/>
+                            <Image placeholder={"blur"} src={ai} alt={'aiIcon'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
                     <div data-aos={"fade-left"} className={"bg-white p-4 rounded-2xl relative"}>
@@ -66,7 +66,7 @@ const Skills = () => {
                         </div>
                         <div
                             className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
-                            <Image src={backend} alt={'backend'} className={"size-[120px] max-md:size-[120px]"}/>
+                            <Image placeholder={"blur"} src={backend} alt={'backend'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
                     <div data-aos={"fade-right"} className={"bg-white p-4 rounded-2xl relative"}>
@@ -86,7 +86,7 @@ const Skills = () => {
                         </div>
                         <div
                             className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
-                            <Image src={devops} alt={'devops'} className={"size-[120px]"}/>
+                            <Image placeholder={"blur"} src={devops} alt={'devops'} className={"size-[120px]"}/>
                         </div>
                     </div>
 
@@ -107,7 +107,7 @@ const Skills = () => {
                         </div>
                         <div
                             className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
-                            <Image src={database} alt={'database'} className={"size-[120px] max-md:size-[120px]"}/>
+                            <Image placeholder={"blur"} src={database} alt={'database'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
 
