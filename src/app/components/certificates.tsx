@@ -55,8 +55,8 @@ const Certificate = () => {
                         volunteeringItems?.map(item=>
 
                             <div key={item?.title} data-aos={"fade-right"}
-                                 className={" border border-gray-300 shadow-box max-lg:p-8 p-8 rounded-xl flex gap-4 max-md:flex-col max-md:justify-center"}>
-                                <Image placeholder={"blur"} src={item?.image} alt={'noImage'} className={"size-[100px] max-md:size-[80px]"}/>
+                                 className={"   shadow-box shadow-white max-lg:p-8 p-8 rounded-xl flex gap-4 max-md:flex-col max-md:justify-center"}>
+                                <Image placeholder={"blur"} src={item?.image} alt={'noImage'} className={"size-[80px] "}/>
                                 <div>
                                     <div className={"text-h5 text-white max-md:text-h6"}>
                                         {item?.title}

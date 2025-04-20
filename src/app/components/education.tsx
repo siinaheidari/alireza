@@ -13,7 +13,7 @@ const Education = () => {
     <div className={" grid grid-cols-2 max-md:grid-cols-1 gap-8"}>
         <div data-aos={"fade-right"}
              className={"space-y-4 border border-gray-200 !shadow-box  w-full max-w-[1800px] mx-auto rounded-xl text-center p-12 max-md:p-5"}>
-            <div className={"text-h5  max-md:text-h6  text-blue"}>
+            <div className={"text-h5  max-md:text-h6  text-dark-1"}>
                 Masters degree, Computer ScienceMasters degree, Computer Science
             </div>
             <Image placeholder={"blur"} src={tehran} alt={'tehran'} className={"mx-auto size-[120px]"}/>
@@ -37,7 +37,7 @@ const Education = () => {
 
         <div data-aos={"fade-left"}
              className={"space-y-4  border border-gray-200 !shadow-box  w-full max-w-[1800px] mx-auto rounded-xl text-center p-12 max-md:p-5"}>
-            <div className={"text-h5  max-md:text-h6  text-blue"}>
+            <div className={"text-h5  max-md:text-h6  text-dark-1"}>
                 Bachelors degree, Computer ScienceBachelors degree, Computer Science
             </div>
             <Image placeholder={"blur"} src={elmosanat} alt={'elmosanat'} className={"mx-auto size-[120px]  "}/>

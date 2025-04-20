@@ -7,7 +7,7 @@ import {LinkedinIcon} from "@/templates/icons/linkedin";
 import {QuoteIcon} from "@/templates/icons/quote";
 import {GithubIcon} from "@/templates/icons/github";
 import {MailIcon} from "@/templates/icons/mail";
-
+import topImage from "../../../public/images/top-section.jpg"
 
 
 
@@ -15,8 +15,8 @@ import {MailIcon} from "@/templates/icons/mail";
 const AboutMe = () => {
     return (
         <div id="about" className="relative w-full min-h-screen">
-
-            <div className="absolute inset-0 bg-[url(/alireza/images/top-section.jpg)] bg-no-repeat bg-cover bg-fixed z-0">
+            {/*bg-[url(/alireza/images/top-section.jpg)]*/}
+            <div className="absolute inset-0  bg-no-repeat bg-cover bg-fixed z-0" style={{backgroundImage: `url('${topImage?.src}')`}}>
                 <div className="absolute inset-0 bg-black/80" />
             </div>
 
