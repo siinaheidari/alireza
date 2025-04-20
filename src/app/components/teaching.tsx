@@ -29,7 +29,7 @@ const Teaching = () => {
 
     ]
     return (
-        <div id={"teachingExperience"} className={"px-6 bg-white h-svh center text-white  max-md:py-12 h-screen-"}>
+        <div id={"teachingExperience"} className={"px-6 bg-white min-h-svh center text-white !pt-10 max-md:py-12 "}>
 
             <div className={"w-fit mx-auto"}>
                 <div className={"text-h3 max-md:text-2xl font-[600] text-center mb-20 text-black"}>
