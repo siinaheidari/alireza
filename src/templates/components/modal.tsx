@@ -17,20 +17,11 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
             setIsVisible(true);
         } else {
             setIsVisible(false);
-
             const timer = setTimeout(() => {
-
-                if (!isOpen) {
-                    document.body.style.overflow = 'auto';
-                }
+                document.body.style.overflow = 'auto';
             }, 300);
-
             return () => clearTimeout(timer);
         }
-
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
     }, [isOpen]);
 
     const handleClose = (e: React.MouseEvent) => {
