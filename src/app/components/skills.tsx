@@ -6,7 +6,7 @@ import ai from "../../../public/images/ai.png"
 import skills from "../../../public/images/skills.jpg";
 
 const Skills = () => {
-const Skills = () => {
+
 
     const skillsItems = [
         {
