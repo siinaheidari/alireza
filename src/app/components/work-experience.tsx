@@ -7,9 +7,9 @@ import tehran from "../../../public/images/tehran.jpg"
 import bazar from "../../../public/images/cafebazaar.jpg"
 import elmosanat from "../../../public/images/elmosanat.jpg"
 import Image, {StaticImageData} from "next/image";
-import Modal from "react-responsive-modal";
+
 import {useState} from "react";
-import 'react-responsive-modal/styles.css';
+import Modal from "@/templates/components/modal";
 
 export type TTimeLineItems = {
     title: string,
@@ -141,22 +141,19 @@ const WorkExperience = () => {
             </div>
 
 
-            <Modal  open={openModal} onClose={handleCloseModal} center
-                    classNames={{
-                modal: 'w-1/2 max-w-none max-md:w-[90%]',
-            }}>
+            <Modal isOpen={openModal} onClose={handleCloseModal}>
                 {selectedItem && (
                     <div className="p-4">
                         <div className={"flex gap-2 items-start"}>
                             {selectedItem.image && (
 
-                                    <Image
-                                        src={selectedItem.image}
-                                        alt={selectedItem.title}
-                                        width={100}
-                                        height={100}
-                                        className="rounded"
-                                    />
+                                <Image
+                                    src={selectedItem.image}
+                                    alt={selectedItem.title}
+                                    width={100}
+                                    height={100}
+                                    className="rounded"
+                                />
 
                             )}
                             <div>
@@ -184,6 +181,8 @@ const WorkExperience = () => {
                     </div>
                 )}
             </Modal>
+
+
 
         </div>
     );
