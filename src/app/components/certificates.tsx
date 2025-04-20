@@ -1,6 +1,48 @@
 import React from 'react';
 
+import udemy from "../../../public/images/udemy_logo.jpg"
+import coursera from "../../../public/images/coursera_logo.jpg"
+import deepLearning from "../../../public/images/deeplearningai_logo.jpg"
+import Image from "next/image";
+
+
 const Certificate = () => {
+
+
+    const volunteeringItems=[
+        {
+            title:'Spark NLP for Data Scientists',
+            place:"Udemy",
+            date:"Aug 2018 - Mar 2019 · 8 mos",
+            image:udemy
+        },
+        {
+            title:'AWS Cloud Technical Essentials',
+            place:"Coursera",
+            date:"Issued Jan 2024",
+            image:coursera
+        },
+        {
+            title:'Writing Production-Ready ETL Pipelines in Python',
+            place:"Udemy",
+            date:"Issued Jan 2024",
+            image:udemy
+        },
+        {
+            title:'Structuring Machine Learning Projects',
+            place:"DeepLearning.AI",
+            date:"Issued Aug 2023",
+            image:deepLearning
+        },
+        {
+            title: 'Machine Learning A-Z: AI, Python & R',
+            place:"Udemy",
+            date:"Issued Jan 2024",
+            image:udemy
+        },
+
+    ]
+
     return (
         <div id={"certificates"} className={"px-6 bg-black pt-30 center min-h-screen max-md:py-12"}>
             <div className={""}>
@@ -9,29 +51,33 @@ const Certificate = () => {
                 </div>
                 <div className={"grid grid-cols-2 gap-12 max-md:grid-cols-1 w-full max-w-[1800px] mx-auto"}>
 
+                    {
+                        volunteeringItems?.map(item=>
 
-                    <div data-aos={"fade-right"} className={" border border-gray-200 shadow-box max-lg:p-8 p-16 rounded-xl"}>
-                        <div className={"text-h5 text-white max-md:text-h6"}>
-                            Advanced Python Programming and OO Thinking (01/2018)
-                        </div>
-                        <div className={"text-h6  max-md:text-base text-gray-1 mt-4 font-[500]"}>
-                            Quera College
-                        </div>
-                    </div>
-                    <div data-aos={"fade-right"} className={" border border-gray-200 shadow-box max-lg:p-8 p-16 rounded-xl"}>
-                        <div className={"text-h5 text-white max-md:text-h6"}>
-                            Primary Advanced Degree in English (12/2016)
-                        </div>
-                        <div className={"text-h6  max-md:text-base text-gray-1 mt-4 font-[500]"}>
-                            Safir Institute
-                        </div>
-                    </div>
+                            <div key={item?.title} data-aos={"fade-right"}
+                                 className={" border border-gray-300 shadow-box max-lg:p-8 p-8 rounded-xl flex gap-4 max-md:flex-col max-md:justify-center"}>
+                                <Image src={item?.image} alt={'noImage'} className={"size-[100px] max-md:size-[80px]"}/>
+                                <div>
+                                    <div className={"text-h5 text-white max-md:text-h6"}>
+                                        {item?.title}
+                                    </div>
+                                    <div className={"text-h6  max-md:text-captionLg text-gray-1 mt-2 font-[500]"}>
+                                        {item?.place}
+                                    </div>
+                                    <div className={"text-captionLg  max-md:text-captionMd text-gray-2 mt-2 font-[500]"}>
+                                        {item?.date}
+                                    </div>
+                                </div>
+
+                            </div>
+                        )
+                    }
+
+
+
 
                 </div>
-                <div className={"text-center text-white text-2xl border-t border-t-gray-600 py-12 max-md:text-xl mt-[20rem] max-md:mt-16"}>
-                    ©2019-2025 Alireza Heidari
-                    ALL RIGHTS RESERVED
-                </div>
+
             </div>
 
         </div>

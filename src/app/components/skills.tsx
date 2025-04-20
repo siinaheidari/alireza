@@ -1,5 +1,8 @@
 import Image from "next/image";
-import aiIcon from "../../../public/images/ai-mind.png"
+import database from "../../../public/images/database-management.png"
+import backend from "../../../public/images/backend.png"
+import devops from "../../../public/images/devops.png"
+import ai from "../../../public/images/ai.png"
 
 
 const Skills = () => {
@@ -20,7 +23,7 @@ const Skills = () => {
                 <div className="absolute inset-0 bg-black/80"/>
             </div>
 
-            <div className="relative z-10 flex flex-col justify-center items-center w-full  pb-20 pt-16 px-4 text-center">
+            <div className="relative z-10 flex flex-col justify-center items-center w-full  pb-20 pt-10 px-4 text-center">
                 <div className={"text-h3 max-md:text-h4 font-[600] text-white text-center mb-32  "}>
                     Skills
                 </div>
@@ -42,8 +45,8 @@ const Skills = () => {
                             }
                         </div>
                         <div
-                            className={"absolute -left-16 max-md:left-1/2 max-md:-translate-x-1/2 top-[-80px] max-md:top-[-110px]"}>
-                            <Image src={aiIcon} alt={'aiIcon'} className={"size-[140px] max-md:size-[140px]"}/>
+                            className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
+                            <Image src={ai} alt={'aiIcon'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
                     <div data-aos={"fade-left"} className={"bg-white p-4 rounded-2xl relative"}>
@@ -62,8 +65,8 @@ const Skills = () => {
                             }
                         </div>
                         <div
-                            className={"absolute -left-16 max-md:left-1/2 max-md:-translate-x-1/2 top-[-80px] max-md:top-[-110px]"}>
-                            <Image src={aiIcon} alt={'aiIcon'} className={"size-[140px] max-md:size-[140px]"}/>
+                            className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
+                            <Image src={backend} alt={'backend'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
                     <div data-aos={"fade-right"} className={"bg-white p-4 rounded-2xl relative"}>
@@ -82,8 +85,8 @@ const Skills = () => {
                             }
                         </div>
                         <div
-                            className={"absolute -left-16 max-md:left-1/2 max-md:-translate-x-1/2 top-[-80px] max-md:top-[-110px]"}>
-                            <Image src={aiIcon} alt={'aiIcon'} className={"size-[140px]"}/>
+                            className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
+                            <Image src={devops} alt={'devops'} className={"size-[120px]"}/>
                         </div>
                     </div>
 
@@ -103,8 +106,8 @@ const Skills = () => {
                             }
                         </div>
                         <div
-                            className={"absolute -left-16 max-md:left-1/2 max-md:-translate-x-1/2 top-[-80px] max-md:top-[-110px]"}>
-                            <Image src={aiIcon} alt={'aiIcon'} className={"size-[140px] max-md:size-[140px]"}/>
+                            className={"absolute -left-10 max-md:left-1/2 max-md:-translate-x-1/2 top-[-70px] max-md:top-[-110px]"}>
+                            <Image src={database} alt={'database'} className={"size-[120px] max-md:size-[120px]"}/>
                         </div>
                     </div>
 

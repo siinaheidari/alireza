@@ -36,10 +36,10 @@ const Header = () => {
                 </Link>
 
                 <Link
-                    to="teachingExperience"
+                    to="certificates"
                     smooth={true} duration={1200}
                 >
-                    Teaching Experience
+                    Certificates
                 </Link>
                 <Link
                     to="professionalActivities"
@@ -47,17 +47,19 @@ const Header = () => {
                 >
                     Professional Activities
                 </Link>
+
+
                 <Link
-                    to="awards"
+                    to="volunteering"
                     smooth={true} duration={1200}
                 >
-                    Awards
+                    volunteering
                 </Link>
                 <Link
-                    to="certificates"
+                    to="teachingExperience"
                     smooth={true} duration={1200}
                 >
-                    Certificates
+                    Teaching Experience
                 </Link>
 
             </div>

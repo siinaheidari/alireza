@@ -39,11 +39,11 @@ const AboutMe = () => {
 
                 <div className=" text-buttonLg max-md:text-bodySm text-gray-300 flex gap-2 items-center justify-center">
                     <LocationIcon className="text-captionLg" />
-                    <div>Canada, Montreal</div>
+                    <div>Canada</div>
                 </div>
 
                 <div className="text-white max-md:text-captionLg text-h6 mt-6 ">
-                    Machine Learning Engineer | Data Scientist | Data Engineer | Python Developer | ETL Design | Big Data
+                  AI / ML Engineering | Data Science
                 </div>
 
                 <div className="!text-gray-200 max-w-[700px] mx-auto text-center mt-4 mb-2">
@@ -53,7 +53,6 @@ const AboutMe = () => {
                     </div>
 
                     <QuoteIcon className="mx-auto text-[24px] mt-2" />
-                    <div className="mt-4 text-blue text-buttonSm">Feel Free to Contact Me!</div>
                 </div>
 
                 <div className="flex gap-4 items-center mt-6 pb-4 max-md:pb-10">
@@ -62,7 +61,7 @@ const AboutMe = () => {
                         <LinkedinIcon className="text-white w-[22px] group-hover:text-blue-400" />
                     </Link>
 
-                    <Link href="https://github.com/alireza-heidari" target="_blank"
+                    <Link href="https://github.com/Alirezahr75" target="_blank"
                           className="size-[2.2rem] rounded-full border border-white flex items-center justify-center group hover:border-blue-400">
                         <GithubIcon className="text-white w-[22px] group-hover:text-blue-400" />
                     </Link>

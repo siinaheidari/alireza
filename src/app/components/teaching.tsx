@@ -29,10 +29,10 @@ const Teaching = () => {
 
     ]
     return (
-        <div id={"teachingExperience"} className={"px-6 bg-black h-svh center text-white py-30  max-md:py-12 h-screen-"}>
+        <div id={"teachingExperience"} className={"px-6 bg-white h-svh center text-white  max-md:py-12 h-screen-"}>
 
-            <div className={"w-fit  mx-auto"}>
-                <div className={"text-h3 max-md:text-2xl font-[600] text-center mb-20"}>
+            <div className={"w-fit mx-auto"}>
+                <div className={"text-h3 max-md:text-2xl font-[600] text-center mb-20 text-black"}>
                     Teaching Experience
                 </div>
                 <ol className="relative border-s border-blue-400 dark:border-white ">
@@ -43,13 +43,13 @@ const Teaching = () => {
                                     <div
                                         className="absolute w-5 h-5 bg-blue-400 rounded-full mt-1.5 -start-2.5 border border-blue-400  "></div>
                                     <div
-                                        className="mb-1 text-captionLg font-normal leading-none text-gray-1 ">
+                                        className="mb-1 text-captionLg font-normal leading-none text-gray-3 ">
                                         {item?.date}
                                     </div>
                                     <div
-                                        className="text-h5 max-md:text-h6 text-white">   {item?.title}</div>
+                                        className="text-h5 max-md:text-h6 text-black">   {item?.title}</div>
                                     <div
-                                        className="mb-4 text-buttonLg font-normal text-gray-100 ">   {item?.description}</div>
+                                        className="mb-4 text-buttonLg font-normal text-gray-6">   {item?.description}</div>
 
                                 </div>
 
