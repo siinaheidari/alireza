@@ -5,7 +5,7 @@ import devops from "../../../public/images/devops.png"
 import ai from "../../../public/images/ai.png"
 import skills from "../../../public/images/skills.jpg";
 
-
+const Skills = () => {
 const Skills = () => {
 
     const skillsItems = [
@@ -48,7 +48,7 @@ const Skills = () => {
                     Skills
                 </div>
                 <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-x-20 gap-y-32 md:pe-12 md:ps-24 w-full max-w-[1800px]">
-                    {skillsItems.map((section, idx) => (
+                    {skillsItems.map((section) => (
                         <div
                             key={section.title}
                             data-aos={section.animation}

@@ -7,7 +7,6 @@ import tehran from "../../../public/images/tehran.jpg"
 import bazar from "../../../public/images/cafebazaar.jpg"
 import elmosanat from "../../../public/images/elmosanat.jpg"
 import Image, {StaticImageData} from "next/image";
-
 import {useState} from "react";
 import Modal from "@/templates/components/modal";
 

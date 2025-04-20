@@ -11,14 +11,13 @@ interface ModalProps {
 const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
     useEffect(() => {
         if (isOpen) {
-            // Disable scrolling on the body when modal is open
+
             document.body.style.overflow = 'hidden';
         } else {
-            // Re-enable scrolling when modal is closed
+
             document.body.style.overflow = 'auto';
         }
 
-        // Clean up when the component unmounts or isOpen changes
         return () => {
             document.body.style.overflow = 'auto';
         };
