@@ -36,10 +36,10 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
             className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center transition-all duration-1000 z-[9999]"
             onClick={handleClose}
         >
-            <div className="bg-white p-6 rounded-lg shadow-lg w-1/2 max-md:w-[95%] max-h-[90vh] overflow-x-hidden overflow-y-auto transition-all duration-1000">
+            <div className="bg-white py-6 px-1 rounded-lg shadow-lg w-1/2 max-md:w-[95%] max-h-[90vh] overflow-x-hidden overflow-y-auto transition-all duration-1000">
                 <div className="relative h-full">
                     <button
-                        className="absolute top-[-20px] right-[-10px] text-gray-500 text-[30px]"
+                        className="absolute top-[-20px] right-[5px] text-gray-500 text-[30px]"
                         onClick={onClose}
                     >
                         &times;
