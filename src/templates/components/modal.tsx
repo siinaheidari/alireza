@@ -13,30 +13,23 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
     useEffect(() => {
         if (isOpen) {
-            // Save the current scroll position
-            const scrollY = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = `-${scrollY}px`;
-            document.body.style.width = '100%';
+            document.body.style.overflow = 'hidden';
             setIsVisible(true);
         } else {
             setIsVisible(false);
+
             const timer = setTimeout(() => {
-                // Restore the scroll position when closing
-                const scrollY = document.body.style.top;
-                document.body.style.position = '';
-                document.body.style.top = '';
-                document.body.style.width = '';
-                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+                if (!isOpen) {
+                    document.body.style.overflow = 'auto';
+                }
             }, 300);
+
             return () => clearTimeout(timer);
         }
 
         return () => {
-            // Cleanup function to ensure styles are reset if component unmounts
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
+            document.body.style.overflow = 'auto';
         };
     }, [isOpen]);
 
